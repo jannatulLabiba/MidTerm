@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EasyCatchGadgets - MacBook</title>
+    <title>EasyCatchGadgets - MacBook Collection</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!--Jannatul Mawa LAbiba; ID: 2120931-->
 
 <header>
 <nav class="navbar">
@@ -22,40 +21,45 @@
 </header>
 
 <main>
-    <section class="cover-photo">
-    <img src="pics/laptop1.jpg" alt="Macbook Cover Photo" style="display: flex; width: 1250px;">
-    </section>
-</main>
-
-<main>
-    <section class="cover-photo">
-    <img src="pics/laptop1.jpg" alt="Macbook Cover Photo" style="display: flex; width: 1250px;">
-    </section>
-</main>
-
-<main>
 <h2>MacBook Collection</h2>
-    <div class="product-grid">
-
+<div class="product-grid">
     <div class="product-item">
-    <img src="pics/laptop2.jpg" alt="MacBook Pro" class="hover-zoom";>
+    <img src="pics/laptop2.jpg" alt="MacBook Pro" class="hover-zoom">
     <p>MacBook Pro - $1200</p>
-    <button class="add-to-cart" onclick="addToCart('MacBook Pro', 1200, 'pics/laptop2.jpg')">Add to Cart</button>
+    <div>
+    <button class="quantity-button" onclick="adjustQuantity('MacBook Pro', -1)">-</button>
+    <span id="macbook-pro-quantity">1</span>
+    <button class="quantity-button" onclick="adjustQuantity('MacBook Pro', 1)">+</button>
     </div>
+            
+    <button class="add-to-cart" onclick="addToCart('MacBook Pro', 1200, 'pics/laptop2.jpg')">Add to Cart</button>
+        </div>
 
     <div class="product-item">
-    <img src="pics/laptop3.jpg" alt="MacBook Air" class="hover-zoom";>
+    <img src="pics/laptop3.jpg" alt="MacBook Air" class="hover-zoom">
     <p>MacBook Air - $1400</p>
+    <div>
+                
+    <button class="quantity-button" onclick="adjustQuantity('MacBook Air', -1)">-</button>
+    <span id="macbook-air-quantity">1</span>
+    <button class="quantity-button" onclick="adjustQuantity('MacBook Air', 1)">+</button>
+    </div>
     <button class="add-to-cart" onclick="addToCart('MacBook Air', 1400, 'pics/laptop3.jpg')">Add to Cart</button>
     </div>
 
+        
     <div class="product-item">
-    <img src="pics/laptop4.jpg" alt="MacBook 13" class="hover-zoom";>
+    <img src="pics/laptop4.jpg" alt="MacBook 13" class="hover-zoom">
     <p>MacBook 13 - $1000</p>
+    <div>
+                
+    <button class="quantity-button" onclick="adjustQuantity('MacBook 13', -1)">-</button>
+    <span id="macbook-13-quantity">1</span>
+    <button class="quantity-button" onclick="adjustQuantity('MacBook 13', 1)">+</button>
+    </div>
     <button class="add-to-cart" onclick="addToCart('MacBook 13', 1000, 'pics/laptop4.jpg')">Add to Cart</button>
     </div>
-    
-</div>
+    </div>
 </main>
 
 <footer>

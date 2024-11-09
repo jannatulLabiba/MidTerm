@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EasyCatchGadgets - MacBook</title>
+    <title>EasyCatchGadgets - Headphones Collection</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!--Jannatul Mawa LAbiba; ID: 2120931-->
 
 <header>
 <nav class="navbar">
@@ -18,42 +17,56 @@
     <li><a href="contact.html">Contact Us</a></li>
     <li><a href="cart.html">Cart Item</a></li>
     </ul>
-    </nav>
+</nav>
 </header>
 
 <main>
-    <section class="cover-photo">
-    <img src="pics/headcov.jpg" alt="Headphone Cover Photo">
-    </section>
-</main>
-
-<main>
-    <h2>Headphones Collection</h2>
+<h2>Headphones Collection</h2>
 <div class="product-grid">
-        <div class="product-item">
-        <img src="pics/headphone1.jpg" alt="boAt Rockerz" class="hover-zoom";>
-        <p>boAt Rockerz - $1200</p>
-        <button class="add-to-cart" onclick="addToCart('boAt Rockerz', 1200, 'pics/headphone1.jpg')">Add to Cart</button>
+    <div class="product-item">
+    <img src="pics/headphone1.jpg" alt="Noise Cancelling Headphones" class="hover-zoom">
+    <p>Noise Cancelling Headphones - $200</p>
+    <div>
+    <button class="quantity-button" onclick="adjustQuantity('Noise Cancelling Headphones', -1)">-</button>
+    <span id="noise-cancelling-quantity">1</span>
+    <button class="quantity-button" onclick="adjustQuantity('Noise Cancelling Headphones', 1)">+</button>
+         </div>
+    <button class="add-to-cart" onclick="addToCart('Noise Cancelling Headphones', 200, 'pics/headphone1.jpg')">Add to Cart</button>
         </div>
-    
-        <div class="product-item">
-        <img src="pics/head2.jpg" alt="Anker Soundcore Space" class="hover-zoom";>
-        <p>Anker Soundcore Space  - $1000</p>
-        <button class="add-to-cart" onclick="addToCart('Anker Soundcore Space', 1000, 'pics/head2.jpg')">Add to Cart</button>
-        </div>
-        
-        <div class="product-item">
-        <img src="pics/head3.jpg" alt="Oraimo OHP-610 BoomPop 2" class="hover-zoom";>
-        <p>Oraimo OHP-610 BoomPop 2  - $1000</p>
-        <button class="add-to-cart" onclick="addToCart('Oraimo OHP-610 BoomPop 2', 1000, 'pics/head3')">Add to Cart</button>
-        </div>
-    
+
+    <div class="product-item">
+    <img src="pics/head2.jpg" alt="Wireless Headphones" class="hover-zoom">
+    <p>Wireless Headphones - $150</p> <div>
+
+    <button class="quantity-button" onclick="adjustQuantity('Wireless Headphones', -1)">-</button>
+
+    <span id="wireless-headphones-quantity">1</span>
+
+    <button class="quantity-button" onclick="adjustQuantity('Wireless Headphones', 1)">+</button>
+    </div>
+
+    <button class="add-to-cart" onclick="addToCart('Wireless Headphones', 150, 'pics/head2.jpg')">Add to Cart</button>
+
+    </div>
+
+    <div class="product-item">
+    <img src="pics/head3.jpg" alt="Bluetooth Headphones" class="hover-zoom">
+    <p>Bluetooth Headphones - $100</p> <div>
+
+    <button class="quantity-button" onclick="adjustQuantity('Bluetooth Headphones', -1)">-</button>
+
+    <span id="bluetooth-headphones-quantity">1</span>
+
+    <button class="quantity-button" onclick="adjustQuantity('Bluetooth Headphones', 1)">+</button>
+    </div>
+
+    <button class="add-to-cart" onclick="addToCart('Bluetooth Headphones', 100, 'pics/head3.jpg')">Add to Cart</button> </div>
+
 </div>
 </main>
 
-    
 <footer>
-<p>&copy; 2024 EasyCatchGadgets. All Rights Reserved.</p>
+    <p>&copy; 2024 EasyCatchGadgets. All Rights Reserved.</p>
 </footer>
 
 <script src="cart.js"></script>
